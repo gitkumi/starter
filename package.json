@@ -1,0 +1,47 @@
+{
+  "name": "starter",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev --p 8080",
+    "lint": "eslint --fix --cache .",
+    "lint:format": "prettier --write --cache .",
+    "lint:type": "tsc",
+    "test": "npm-run-all --parallel lint lint:type lint:format vitest:run",
+    "vitest:run": "vitest run",
+    "vitest": "vitest"
+  },
+  "engines": {
+    "node": ">=16.15.0",
+    "pnpm": ">=7.1.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "modern-normalize": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/node": "^18.7.20",
+    "@types/prettier": "^2.7.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.3",
+    "vitest": "^0.23.4"
+  }
+}
