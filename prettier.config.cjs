@@ -5,4 +5,5 @@ module.exports = {
   semi: false,
   jsxSingleQuote: true,
   printWidth: 80,
+  singleAttributePerLine: true
 }
