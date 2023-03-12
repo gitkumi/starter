@@ -1,6 +1,5 @@
 import App from './App'
-import './reset.css'
-import 'modern-normalize/modern-normalize.css'
+import './main.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
