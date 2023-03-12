@@ -30,7 +30,6 @@ module.exports = {
     'react',
     'react-hooks',
     '@typescript-eslint',
-    'typescript-sort-keys',
   ],
   rules: {
     '@typescript-eslint/ban-ts-comment': 0,
@@ -75,14 +74,11 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
-    'sort-keys': 2,
     'space-before-blocks': 2,
     'space-before-function-paren': [
       2,
       { anonymous: 'never', asyncArrow: 'always', named: 'never' },
     ],
-    'typescript-sort-keys/interface': 2,
-    'typescript-sort-keys/string-enum': 2,
   },
   settings: {
     'import/parsers': {
