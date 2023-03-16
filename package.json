@@ -4,15 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "prepare": "husky install",
     "build": "vite build",
     "dev": "vite dev --port 8080",
-    "lint": "eslint --fix --cache .",
-    "lint:format": "prettier --write --cache .",
-    "lint:type": "tsc",
-    "test": "npm-run-all --parallel lint lint:type lint:format vitest:run",
-    "vitest:run": "vitest run",
-    "vitest": "vitest"
+    "eslint": "eslint --fix --cache .",
+    "prettier": "prettier --write --cache .",
+    "tsc": "tsc",
+    "test": "vitest",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=16.13.0",
@@ -37,13 +35,24 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^2.3.0",
+    "eslint-plugin-unicorn": "^46.0.0",
     "husky": "^8.0.3",
-    "npm-run-all": "^4.1.5",
+    "lint-staged": "^13.2.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5",
     "vite": "^4.1.4",
     "vitest": "^0.23.4"
+  },
+  "lint-staged": {
+    "src/**/*.{html,json,md,js,jsx,ts,tsx,css,scss}": [
+      "prettier --write --cache"
+    ],
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix --cache"
+    ]
   }
 }
