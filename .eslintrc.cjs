@@ -10,7 +10,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:typescript-sort-keys/recommended',
   ],
   overrides: [
     {
@@ -26,14 +25,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    'import',
-    'react-hooks',
-    'react',
-    'sort-keys-fix',
-    'typescript-sort-keys',
-    'unicorn',
-  ],
+  plugins: ['import', 'react-hooks', 'react', 'unicorn'],
   rules: {
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-empty-function': 0,
@@ -89,7 +81,6 @@ module.exports = {
       2,
       { anonymous: 'never', asyncArrow: 'always', named: 'never' },
     ],
-    'sort-keys-fix/sort-keys-fix': 'warn',
     'unicorn/better-regex': 2,
     'unicorn/catch-error-name': 2,
     'unicorn/consistent-function-scoping': 2,
