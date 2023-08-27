@@ -71,7 +71,6 @@ module.exports = {
     'object-shorthand': 2,
     'prefer-arrow-callback': 2,
     'prefer-const': 2,
-    'react/jsx-sort-props': 2,
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
@@ -107,6 +106,13 @@ module.exports = {
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      'typescript': {
+        'project': [
+          './tsconfig.json'
+        ]
+      }
     },
     react: {
       version: '18.0.0',
