@@ -6,9 +6,8 @@ import { defineConfig } from 'vite'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const assetsDir = '__bundle'
+const assetsDir = '_bundle'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   appType: 'mpa',
   root: path.resolve(__dirname, 'src', 'pages'),
